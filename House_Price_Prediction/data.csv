@@ -1,0 +1,39 @@
+area,bedrooms,age,location,price
+250,1,5,Gandhipuram,25000
+300,1,3,RS Puram,27000
+280,1,10,Peelamedu,22000
+350,1,2,Saibaba Colony,32000
+370,1,1,RS Puram,35000
+260,1,15,Singanallur,20000
+300,1,7,Peelamedu,23000
+340,1,4,Tatabad,29000
+360,1,2,Ramanathapuram,31000
+270,1,12,Koundampalayam,21000
+320,1,8,Hope College,26000
+310,1,6,Vadavalli,25000
+380,1,1,Saibaba Colony,37000
+290,1,5,Peelamedu,24000
+330,1,3,Gandhipuram,28000
+390,1,2,Race Course,39000
+395,1,4,RS Puram,40000
+275,1,11,Kuniyamuthur,22500
+400,1,2,Singanallur,42000
+310,1,6,Podanur,26000
+300,1,5,Ukkadam,26000
+310,1,6,Gopalapuram,27500
+285,1,7,PN Palayam,25000
+330,1,3,Veerakeralam,29000
+295,1,9,Keeranatham,24500
+320,1,4,Kovaipudur,28500
+305,1,6,Thondamuthur,25500
+270,1,8,Saravanampatti,23000
+350,1,2,Perur,30000
+360,1,5,Ganapathy,31000
+290,1,7,Thudiyalur,24500
+300,1,9,Saravanampatti,26000
+320,1,4,Eachanari,27000
+305,1,6,Ondipudur,25000
+285,1,8,Vadavalli,24000
+310,1,3,Nehru Nagar,28000
+295,1,10,Nanjundapuram,23000
+325,1,2,Kalapatti,29000

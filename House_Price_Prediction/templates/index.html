@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>House Price Prediction</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+        body {
+            background: #4CAF50;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 40px;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 14px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.1);
+            max-width: 400px;
+            margin: auto;
+        }
+        .input-container {
+            position: relative;
+            margin: 10px 0;
+        }
+        .input-container i {
+            position: absolute;
+            left: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 18px;
+        }
+        input, label {
+            display: block;
+            width: 90%;
+            margin: 10px 0;
+            font-size: 14px;
+        }
+        input[type="number"], input[type="text"] {
+            padding-left: 35px; /* space for icon */
+        }
+        input[type="submit"] {
+            background: #4CAF50;
+            color: white;
+            border: none;
+            padding: 12px;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+        .result {
+            margin-top: 100px;
+            font-weight: bold;
+            color:#333;
+            font-size: 18px;
+        }
+        h1 {
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1> House Price Prediction</h1>
+        <form action="/predict" method="post">
+
+            <label for="area">Enter Area (sq ft):</label>
+            <div class="input-container">
+                <i class="fa-solid fa-ruler-combined" style="color: #ff9800;"></i>
+                <input type="number" id="area" name="area" required>
+            </div>
+
+            <label for="bedrooms">Enter No. of Bedrooms:</label>
+            <div class="input-container">
+                <i class="fa-solid fa-bed" style="color: #3f51b5;"></i>
+                <input type="number" id="bedrooms" name="bedrooms" required>
+            </div>
+
+            <label for="age">Enter Age of House (years):</label>
+            <div class="input-container">
+                <i class="fa-solid fa-building" style="color: #af934c;"></i>
+                <input type="number" id="age" name="age" required>
+            </div>
+
+            <label for="location">Enter Location:</label>
+            <div class="input-container">
+                <i class="fa-solid fa-map-marker-alt" style="color: #f44336;"></i>
+                <input type="text" id="location" name="location" required>
+            </div>
+
+            <input type="submit" value="Predict Price">
+        </form>
+
+        {% if prediction_text %}
+        <div class="result">
+            {{ prediction_text }}
+        </div>
+        {% endif %}
+    </div>
+</body>
+</html>
